@@ -20,5 +20,12 @@ export class AppComponent {
     nome: 'nome',
     descricao: 'teste'
 
-  }]
+  },{
+    id: '02',
+    nome: 'nome',
+    descricao: 'teste'}]
+
+    adicionar(){
+      this.valores.push({id: '02',nome: 'nome',descricao: 'teste'})
+    }
 }
