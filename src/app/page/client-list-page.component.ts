@@ -5,5 +5,6 @@ import { Component } from "@angular/core";
   templateUrl: './client-list-page.component.html'
 })
 export class ClientListPage{
+  clientPremium = true;
 
 }

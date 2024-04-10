@@ -2,11 +2,18 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
 
-<ul>
-  <li>item 1 - {{descricao}} </li>
-  <li>item 2</li>
+<div *ngIf='clientPremium; else naoPremium'>
+  Vocé é um cliente premium você tem acesso a informaçoes diferenciadas!
+</div>
+
+<ng-template #naoPremium>
+  Nao é um cliente Premium.
+</ng-template>
+<br>
+<button (click)="togglePremiumStatus()">Alternar Status</button>
+
+<ul *ngFor="let valor of valores">
+  <li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}} </li>
+
 </ul>
 
-<label>Digite um descrição</label>
-<br>
-<input [(ngModel)]="descricao"/>

@@ -7,5 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-estudos-angular';
-  descricao = "Descrição do item 1"
+  descricao = "Descrição do item 1";
+
+  clientPremium = true;
+
+  togglePremiumStatus() {
+    this.clientPremium = !this.clientPremium;
+  }
+
+  valores = [{
+    id: '01',
+    nome: 'nome',
+    descricao: 'teste'
+
+  }]
 }
