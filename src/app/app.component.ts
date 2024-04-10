@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,6 +11,8 @@ export class AppComponent {
   descricao = "Descrição do item 1";
 
   clientPremium = true;
+
+  nome = "Narlan Mota"
 
   togglePremiumStatus() {
     this.clientPremium = !this.clientPremium;
@@ -24,6 +27,9 @@ export class AppComponent {
     id: '02',
     nome: 'nome',
     descricao: 'teste'}]
+
+    umaData = new Date()
+    umDinheiro = 10.5
 
     adicionar(){
       this.valores.push({id: '02',nome: 'nome',descricao: 'teste'})

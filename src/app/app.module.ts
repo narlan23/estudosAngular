@@ -7,11 +7,15 @@ import { headerComponent } from './component/header.component';
 import { ComponentModule } from './component/components.module';
 import { FormsModule } from '@angular/forms';
 import { BindingPageComponent } from './page/binding-page.component';
+import { ClientListPage } from './page/client-list-page.component';
+import { CustomUpperCasePipe } from './pipes/custom.uppercase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindingPageComponent
+    BindingPageComponent,
+    ClientListPage,
+    CustomUpperCasePipe
   ],
   imports: [
     BrowserModule,
