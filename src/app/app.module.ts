@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { headerComponent } from './component/header.component';
 import { ComponentModule } from './component/components.module';
 import { FormsModule } from '@angular/forms';
+import { BindingPageComponent } from './page/binding-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BindingPageComponent
   ],
   imports: [
     BrowserModule,
