@@ -5,6 +5,8 @@ import { Component } from "@angular/core";
   templateUrl: './client-list-page.component.html'
 })
 export class ClientListPage{
-  clientPremium = true;
+  clientPremium = false;
+
+  clients = ['Cliente 1','Cliente 2']
 
 }

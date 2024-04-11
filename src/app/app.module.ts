@@ -12,6 +12,7 @@ import { CustomUpperCasePipe } from './pipes/custom.uppercase.pipe';
 import { filho1PageComponent } from './page/filho1.page.component';
 import { filho2PageComponent } from './page/filho2.page.component';
 import { PaiPageComponent } from './page/pai.component';
+import { loginPageComponent } from './page/login.page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PaiPageComponent } from './page/pai.component';
     CustomUpperCasePipe,
     PaiPageComponent,
     filho1PageComponent,
-    filho2PageComponent
+    filho2PageComponent,
+    loginPageComponent
   ],
   imports: [
     BrowserModule,
