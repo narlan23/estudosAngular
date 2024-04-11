@@ -9,13 +9,19 @@ import { FormsModule } from '@angular/forms';
 import { BindingPageComponent } from './page/binding-page.component';
 import { ClientListPage } from './page/client-list-page.component';
 import { CustomUpperCasePipe } from './pipes/custom.uppercase.pipe';
+import { filho1PageComponent } from './page/filho1.page.component';
+import { filho2PageComponent } from './page/filho2.page.component';
+import { PaiPageComponent } from './page/pai.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BindingPageComponent,
     ClientListPage,
-    CustomUpperCasePipe
+    CustomUpperCasePipe,
+    PaiPageComponent,
+    filho1PageComponent,
+    filho2PageComponent
   ],
   imports: [
     BrowserModule,
