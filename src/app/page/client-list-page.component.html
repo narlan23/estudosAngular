@@ -3,6 +3,6 @@
 <div >
   <h1>Vocé é um client premium você tem acesso a informaçoes diferenciadas!</h1>
   <ul *ngFor="let client of clients">
-    <li>{{clients}}</li>
+    <li><a [routerLink]="['/client/detalhe',client.id]">{{client.nome}}</a> </li>
   </ul>
 </div>

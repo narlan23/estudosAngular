@@ -13,6 +13,8 @@ import { filho1PageComponent } from './page/filho1.page.component';
 import { filho2PageComponent } from './page/filho2.page.component';
 import { PaiPageComponent } from './page/pai.component';
 import { loginPageComponent } from './page/login.page.component';
+import { ClienteDetalhePageComponent } from './page/ClienteDetalhePageComponent';
+import { RXJSPageComponent } from './page/rxjs-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { loginPageComponent } from './page/login.page.component';
     PaiPageComponent,
     filho1PageComponent,
     filho2PageComponent,
-    loginPageComponent
+    loginPageComponent,
+    ClienteDetalhePageComponent,
+    RXJSPageComponent
   ],
   imports: [
     BrowserModule,

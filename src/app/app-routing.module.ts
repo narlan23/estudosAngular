@@ -6,6 +6,8 @@ import { filho2PageComponent } from './page/filho2.page.component';
 import { PaiPageComponent } from './page/pai.component';
 import { UserGuard } from './guards/user.guard';
 import { loginPageComponent } from './page/login.page.component';
+import { ClienteDetalhePageComponent } from './page/ClienteDetalhePageComponent';
+import { RXJSPageComponent } from './page/rxjs-page.component';
 
 const routes: Routes = [
   {path: 'client',component:ClientListPage,canActivate: [UserGuard]},
@@ -16,7 +18,9 @@ const routes: Routes = [
       {path:'filho2',component: filho2PageComponent}
     ]
   },
-  {path:'login',component:loginPageComponent}
+  {path:'login',component:loginPageComponent},
+  {path:'client/detalhe/:id',component:ClienteDetalhePageComponent},
+  {path:'rxjs',component:RXJSPageComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
