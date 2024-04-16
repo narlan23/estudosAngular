@@ -6,3 +6,10 @@
 <ul>
   <li *ngFor = "let item of items">{{item}}</li>
 </ul>
+
+<p>Subject</p>
+<button (click)="emitirEvento()">Emitir Evento</button>
+<div>
+  {{ultimoEvento}}
+</div>
+
