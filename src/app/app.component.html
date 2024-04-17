@@ -1,10 +1,12 @@
 <h1>Primeira página</h1>
 <app-header></app-header>
 <a [routerLink]="['pai']">Ir para componente pai</a> <br/>
-<router-outlet></router-outlet>
 <a [routerLink]="['rxjs']">Ir para componente rxjs</a> <br/>
+<a [routerLink]="['listClient']">Ir para Lista pessoas</a> <br/>
+<a [routerLink]="['userlist']">Ir para Lista usuarios</a> <br/>
+
 <router-outlet></router-outlet>
-<a [routerLink]="['listClient']">Ir para Lista pessoas</a>
+
 <!--
 <div *ngIf='clientPremium; else naoPremium'>
   Vocé é um cliente premium você tem acesso a informaçoes diferenciadas!
